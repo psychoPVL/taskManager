@@ -18,7 +18,7 @@ function addItem(e) {
     const inputForm = document.querySelector('#newItemText');
     //получаем текст инпута и записываем в переменную
     const itemText = inputForm.value;
-    if (inputForm.value === '') {
+    if (inputForm.value.trim() === '') {
         return false;
     }
 
